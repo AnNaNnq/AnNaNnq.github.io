@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index_style.css" />
+    <title>
+        Sarbiewski Anna
+    </title>
+</head>
+<body>
+<nav>
+    <div class="profile">
+        <img src="./img.jpg" alt="profile photo" />
+        <h1>Sarbiewski Anna</h1>
+    </div>
+    <ul>
+        <li> <a href="https://github.com/AnNaNnq?tab=repositories"> My Other Projects</a></li>
+        <li> <a href="./CV-en.pdf" download="CV-en.pdf"> Curriculum Vitae </a></li>
+        <li class="language-selector" onclick="toggleLanguageDropdown()">
+            <img src="./flag_en.png" alt="English">
+            <div class="language-dropdown" id="language-dropdown">
+                <img src="./flag_en.png" alt="English" onclick="changeLanguage('en')">
+                <img src="./flag_fr.png" alt="Français" onclick="changeLanguage('fr')">
+            </div>
+        </li>
+    </ul>
+</nav>
+
+<script>
+    function toggleLanguageDropdown() {
+        var dropdown = document.getElementById("language-dropdown");
+        dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";
+    }
+
+    function changeLanguage(lang) {
+        if (lang === "fr") {
+            window.location.href = "index-fr.html";
+        } else {
+            window.location.href = "index-en.html";
+        }
+    }
+</script>
+
+<section class="page-content">
+    <header>
+        <h1>Video Game Development Student</h1>
+        <p>
+            I am passionate about video game creation and currently pursuing a Master's degree in Gamagora at
+            Lumière University Lyon 2. Throughout my studies, I have developed strong skills in programming, gameplay creation,
+            and development tools. In the future, I would like to focus more on Game Design to leverage my
+            technical skills and creativity to design unique and immersive experiences.
+        </p>
+    </header>
+
+    <section class="presentation-image">
+        <img src="./jeuxvideo.jpg" alt="" />
+    </section>
+
+    <section class="projects-section">
+        <h1>Completed Projects</h1>
+        <div class="projects">
+            <div class="project">
+                <h4>Mekaiju</h4>
+                <p class="description">
+                    <strong> Unity </strong> <br>
+                    <a href="https://github.com/AnNaNnq/Mekaiju"> Mekaiju</a> is a 3D action game where mechas battle
+                    kaijus in intense boss fights. Featuring a semi-realistic style, the game offers dynamic combat,
+                    spectacular attacks, and destructible environments. (In progress)
+                </p>
+                <p class="dates">Dates 2024 - 2025</p>
+            </div>
+            <div class="project">
+                <h4>Pandemonium</h4>
+                <p class="description">
+                    <strong> Unity </strong> <br>
+                    The game <a href="https://github.com/AnNaNnq/Pandemonium">Pandemonium</a> is a survival RPG
+                    developed in Unity, where the player takes on the role of Kaelorn Raqdor, arriving on Earth
+                    with the mission of liberating the area from mutant rats. <br>
+                    <a href="https://xoletis.itch.io/pandemonium">Download the game </a>
+                </p>
+                <p class="dates">Dates 2024 - 2025</p>
+            </div>
+            <div class="project">
+                <h4>EcoGarden</h4>
+                <p class="description">
+                    <strong> Unreal Engine </strong> <br>
+                    <a href="https://github.com/AnNaNnq/EcoGarden"> EcoGarden</a> is a virtual reality game where the
+                    player takes on the role of a farmer. They must plant, water, and harvest crops while upgrading
+                    their farm. The VR immersion allows for realistic interaction with tools and the environment.
+                </p>
+                <p class="dates">Dates 2024 - 2025</p>
+            </div>
+            <div class="project">
+                <h4>Virtual World</h4>
+                <p class="description">
+                    <strong> Unity </strong> <br>
+                    <a href="https://github.com/AnNaNnq/GAMAGORA-Virtual-World-project"> Virtual World</a> is a project on
+                    procedural city generation, including roads, houses, and trees. I contributed to
+                    developing the road and building generation system, enabling the creation of a
+                    coherent and dynamic urban environment.
+                </p>
+                <p class="dates">Dates 2024 - 2025</p>
+            </div>
+            <div class="project">
+                <h4>Face Filter</h4>
+                <p class="description">
+                    <strong> Python (OpenCV) </strong> <br>
+                    <a href="https://github.com/AnNaNnq/Projet-Filtres-sur-Visage">This project</a> is a program that applies dynamic filters to the face or
+                    certain facial features. It can also add interactive foreground and
+                    background effects, creating a real-time visual immersion.
+                </p>
+                <p class="dates">Dates 2023 - 2024</p>
+            </div>
+            <div class="project">
+                <h4>Planning Poker</h4>
+                <p class="description">
+                    <strong> Angular </strong> <br>
+                    <a href="https://github.com/AnNaNnq/planningPokerPP"> Planning Poker</a> is a website for Planning Poker, redesigned with a retro and fun style. It allows project management teams
+                    to estimate their tasks collaboratively through an intuitive interface.
+                </p>
+                <p class="dates">Dates 2023 - 2024</p>
+            </div>
+        </div>
+    </section>
+</section>
+
+<footer>
+    <div class="colonne">
+        <h3>My Networks</h3>
+        <p><i class="fa fa-github"></i> <a href="https://github.com/AnNaNnq"> AnNaNnq</a></p>
+        <p><i class="fa fa-linkedin-square"></i> <a href="https://www.linkedin.com/in/anna-sarbiewski-333684251/"> Anna Sarbiewski</a></p>
+    </div>
+    <div class="colonne">
+        <h3>My Contact</h3>
+        <p>anna.sarbiewski@gmail.com</p>
+        <p>anna.sarbiewski@univ-lyon2.fr</p>
+    </div>
+</footer>
+</body>
+</html>
